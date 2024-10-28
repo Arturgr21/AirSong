@@ -111,3 +111,93 @@ button {
 button:hover {
     background-color: #555;
 }
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Muda a direção da navegação para coluna em telas menores */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    nav ul {
+        flex-direction: column; /* Lista de navegação em coluna */
+        gap: 10px; /* Ajusta o espaço entre os itens */
+    }
+
+    .logo img {
+        width: 40px; /* Ajusta a largura da logo */
+        height: 40px; /* Ajusta a altura da logo */
+    }
+
+    nav h1 {
+        font-size: 1.6rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .intro {
+        padding: 20px; /* Reduz o padding para telas menores */
+    }
+
+    .intro h2 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do cabeçalho */
+    }
+
+    .intro p {
+        font-size: 1rem; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+    button {
+        font-size: 0.9rem; /* Ajusta o tamanho do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 30px; /* Ajusta ainda mais a logo para telas pequenas */
+        height: 30px; /* Ajusta a altura da logo */
+    }
+
+    nav h1 {
+        font-size: 1.4rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    .intro {
+        padding: 10px; /* Reduz o padding ainda mais */
+    }
+
+    .intro h2 {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte do cabeçalho */
+    }
+
+    .intro p {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+    button {
+        padding: 8px 16px; /* Ajusta o padding do botão */
+        font-size: 0.8rem; /* Ajusta o tamanho do botão */
+    }
+}
+/* Estilo da seção Sobre */
+.sobre {
+    padding: 40px;
+    background-color: #f5f5f5;
+    width: 100%;
+    text-align: center;
+}
+
+.sobre-conteudo {
+    max-width: 800px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    color:darkolivegreen;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
